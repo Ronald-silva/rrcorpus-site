@@ -104,4 +104,46 @@ footer{
 .icone-zap{
     width: 25px;
 }
+@media only screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    .service {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    header h1, header h4 a {
+        font-size: smaller;
+    }
+    .logo {
+        width: 50px; /* Reduzir o tamanho do logo */
+    }
+    .icone, .icone-zap {
+        width: 15px; /* Ajustar o tamanho dos ícones */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    header h1 {
+        margin-bottom: 10px;
+    }
+    header h4 a {
+        padding: 10px;
+        font-size: smaller;
+    }
+    .service p {
+        font-size: smaller; /* Reduzir o tamanho da fonte para melhor leitura */
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .right, footer .left {
+        margin-bottom: 10px;
+    }
+}
 
