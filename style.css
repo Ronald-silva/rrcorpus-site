@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    font-family: Arial, sans-serif; 
+    background-image: url(img/curso-tecnico-estetica.jpg);
+}
+.container { 
+    max-width: 1200px; margin: auto; 
+   
+}
+.logo{
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #f4efec;
+}
+header { 
+    border-radius: 10px;
+    background: #ddb7ac; padding: 10px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px 5px  20px
+}
+header h1{
+    color:#f4efec;
+}
+header h4 a{
+    border: 2px solid #f4efec ;
+    padding: 20px 20px 20px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #f4efec;
+    background-image: url(img/ouro\ gradiente.jfif);
+}
+header h4 a:hover{
+    color: #5c3b26;
+}
+.services { 
+    display: flex; flex-wrap: wrap; justify-content: space-around;
+    margin:50px 50px;
+    
+}
+.service { 
+    flex-basis: calc(33% - 20px); 
+    margin: 10px 10px 10px 10px; 
+    padding: 20px; 
+    background: #f4efec; 
+    border-radius: 5px; 
+}
+.service h2 a{
+    text-decoration: none;
+    color: #ddb7ac;
+}
+.service h2 a:hover{
+    color:#dc9e8d
+}
+
+.service h2 { 
+    font-size: 1.5em; color: goldenrod; }
+.service p { 
+    margin: 15px 0; }
+.ilus{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    
+}
+footer{
+    background-color: #999b85;
+    width: 100%;
+    padding: 30px 30px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    color: black;
+    display:flex;
+    justify-content: space-between;
+    font-size: b
+    
+}
+.right p a{
+    text-decoration: none;
+    color: black;
+}
+.right p a:hover{
+    color:#f4efec
+}
+.left p a{
+    text-decoration: none;
+    color: black;
+}
+.left p a:hover{
+    color:#f4efec;
+}
+.icone{
+    width: 20px;
+    
+}
+.icone-zap{
+    width: 25px;
+}
+
