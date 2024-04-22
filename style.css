@@ -39,6 +39,7 @@ header h4 a{
 }
 header h4 a:hover{
     color: #5c3b26;
+    
 }
 .services { 
     display: flex; flex-wrap: wrap; justify-content: space-around;
@@ -51,6 +52,7 @@ header h4 a:hover{
     padding: 20px; 
     background: #f4efec; 
     border-radius: 5px; 
+    border: 2px solid black;
 }
 .service h2 a{
     text-decoration: none;
@@ -73,50 +75,42 @@ header h4 a:hover{
 footer{
     background-color: #999b85;
     width: 100%;
-    padding: 30px 30px;
+    padding: 15px 15px;
     bottom: 0;
     position: relative;
     width: 100%;
     color: black;
     display:flex;
-    justify-content: space-between;
-    font-size: b
-    
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
 }
-.right p a{
-    text-decoration: none;
-    color: black;
+
+.icones img{
+    width: 30px;
+    margin-left: 15px;
+    padding-bottom: 10px;
 }
-.right p a:hover{
-    color:#f4efec
+.icones a .zap{
+    width: 42px; 
 }
-.left p a{
-    text-decoration: none;
-    color: black;
-}
-.left p a:hover{
-    color:#f4efec;
-}
-.icone{
-    width: 20px;
-    
-}
-.icone-zap{
-    width: 25px;
+.icones a .insta{
+    width: 38px; 
 }
 @media only screen and (max-width: 768px) {
     .services {
-        flex-direction: column;
+        flex-direction: row;
     }
     .service {
         flex-basis: 100%;
         margin: 10px 0;
     }
     header h1, header h4 a {
-        font-size: smaller;
+        font-size:small;
     }
     .logo {
-        width: 50px; /* Reduzir o tamanho do logo */
+        width: 60px; /* Reduzir o tamanho do logo */
     }
     .icone, .icone-zap {
         width: 15px; /* Ajustar o tamanho dos ícones */
@@ -125,7 +119,7 @@ footer{
 
 @media only screen and (max-width: 480px) {
     header {
-        flex-direction: column;
+        flex-direction:row;
         padding: 10px;
     }
     header h1 {
@@ -139,11 +133,9 @@ footer{
         font-size: smaller; /* Reduzir o tamanho da fonte para melhor leitura */
     }
     footer {
-        flex-direction: column;
+        flex-direction:row;
         text-align: center;
     }
-    footer .right, footer .left {
-        margin-bottom: 10px;
-    }
+   
 }
 
