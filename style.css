@@ -8,12 +8,15 @@ body {
     background-image: url(img/curso-tecnico-estetica.jpg);
 }
 .container { 
-    max-width: 1200px; margin: auto; 
-   
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 .logo{
     margin-left: 10px;
-    width: 100px;
+    max-width: 100px;
+    height: auto;
     border-radius: 50%;
     border: 2px solid #f4efec;
 }
@@ -42,18 +45,29 @@ header h4 a:hover{
     
 }
 .services { 
-    display: flex; flex-wrap: wrap; justify-content: space-around;
-    margin:50px 50px;
+
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content:center;
+    margin:30px 30px;
+    gap: 20px;
     
 }
 .service { 
     flex-basis: calc(33% - 20px); 
-    margin: 10px 10px 10px 10px; 
     padding: 20px; 
     background: #f4efec; 
     border-radius: 5px; 
     border: 2px solid black;
-}
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
 .service h2 a{
     text-decoration: none;
     color: #ddb7ac;
@@ -63,9 +77,12 @@ header h4 a:hover{
 }
 
 .service h2 { 
-    font-size: 1.5em; color: goldenrod; }
+    font-size: 1.5em; 
+    color: goldenrod; 
+}
 .service p { 
-    margin: 15px 0; }
+    margin: 15px 0; 
+}
 .ilus{
     width: 100%;
     height: 80%;
@@ -73,69 +90,42 @@ header h4 a:hover{
     
 }
 footer{
-    background-color: #999b85;
-    width: 100%;
-    padding: 15px 15px;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-    color: black;
-    display:flex;
-    text-align: center;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
+   background-color: #999b85;
+   padding: 20px;
+   text-align: center;
+      
 }
-
 .icones img{
-    width: 30px;
+    max-width: 30px;
+    height: auto;
     margin-left: 15px;
-    padding-bottom: 10px;
 }
-.icones a .zap{
-    width: 42px; 
-}
-.icones a .insta{
-    width: 38px; 
-}
-@media only screen and (max-width: 768px) {
-    .services {
-        flex-direction: row;
-    }
+@media (max-width: 768px) {
     .service {
-        flex-basis: 100%;
-        margin: 10px 0;
+      width: 100%;
     }
-    header h1, header h4 a {
-        font-size:small;
-    }
+  }
+  
+  @media (max-width: 480px) {
     .logo {
-        width: 60px; /* Reduzir o tamanho do logo */
+      max-width: 80px;
     }
-    .icone, .icone-zap {
-        width: 15px; /* Ajustar o tamanho dos ícones */
+  
+    .icones img {
+      max-width: 40px;
     }
-}
+  }
 
-@media only screen and (max-width: 480px) {
-    header {
-        flex-direction:row;
-        padding: 10px;
-    }
-    header h1 {
-        margin-bottom: 10px;
-    }
-    header h4 a {
-        padding: 10px;
-        font-size: smaller;
-    }
-    .service p {
-        font-size: smaller; /* Reduzir o tamanho da fonte para melhor leitura */
-    }
-    footer {
-        flex-direction:row;
-        text-align: center;
-    }
+
+
+
+
+
+
+
+    
+    
+
    
-}
+
 
