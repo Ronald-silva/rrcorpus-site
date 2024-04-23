@@ -38,7 +38,7 @@ body {
 }
 header { 
     border-radius: 10px;
-    background: #ddb7ac; padding: 10px 0;
+    background: #ddb7ac; 
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -58,7 +58,6 @@ h4{
 }
 a{
     text-decoration: none;
-    color: black;
 }
 a:hover{
     color:#f4efec
@@ -104,6 +103,11 @@ a:hover{
 .service p { 
     margin: 15px 0; 
 }
+.service #whats{
+    border-radius: 50%;
+    width: 80px;
+    margin: 0 0 10px 850px;
+}
 footer{
    background-color: #999b85;
    padding: 20px;
@@ -116,6 +120,7 @@ footer{
     margin-left: 15px;
 }
 @media screen and (max-width: 1020px) {
+  
     .service {
       width: 100%;
     }
@@ -126,11 +131,13 @@ footer{
     color: #f4efec;
     background-color: black;
     flex-direction:row-reverse;
-    
     }
     a{
-        text-decoration: none
+    text-decoration: none
     };
+    .service #whats{
+        margin-left: 5px;
+    }
   }
   
  
