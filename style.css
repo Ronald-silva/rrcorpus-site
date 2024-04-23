@@ -44,13 +44,13 @@ header {
     align-items: center;
     text-align: center;
     padding: 5px 20px 5px  20px;
+    border: 2px solid rgb(160, 140, 140);
 }
 header h1{
     color:#f4efec;
 }
 h4{
     border: 2px solid #f4efec ;
-    color: aqua;
     border-radius: 30px;
     text-decoration:none; 
     color: #f4efec;
@@ -58,6 +58,7 @@ h4{
 }
 a{
     text-decoration: none;
+    color:black;
 }
 a:hover{
     color:#f4efec
@@ -70,6 +71,14 @@ a:hover{
     gap: 20px;
     
 }
+#whats {
+    position: fixed;
+    right: 6px;
+    bottom: 6px;
+    border-radius: 100%;
+    width: 60px;
+    
+}
 .ilus{
     border-radius: 10px;
 }
@@ -78,7 +87,7 @@ a:hover{
     padding: 10px; 
     background: #f4efec; 
     border-radius: 5px; 
-    border: 2px solid black;
+    border: 2px solid rgb(160, 140, 140);
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -103,11 +112,7 @@ a:hover{
 .service p { 
     margin: 15px 0; 
 }
-.service #whats{
-    border-radius: 50%;
-    width: 80px;
-    margin: 0 0 10px 850px;
-}
+
 footer{
    background-color: #999b85;
    padding: 20px;
@@ -122,22 +127,21 @@ footer{
 @media screen and (max-width: 1020px) {
   
     .service {
-      width: 100%;
+        width: 100%;
     }
     h4 {
-    border: 2px solid #f4efec ;
-    padding: 8px 8px 8px 8px;
-    border-radius: 100px;
-    color: #f4efec;
-    background-color: black;
-    flex-direction:row-reverse;
+        border: 2px solid #f4efec ;
+        padding: 8px 8px 8px 8px;
+        border-radius: 100px;
+        color: #f4efec;
+        background-color: black;
+        flex-direction:row-reverse;
     }
-    a{
-    text-decoration: none
-    };
-    .service #whats{
-        margin-left: 5px;
+    a {
+    text-decoration: none;
     }
+    
+    
   }
   
  
